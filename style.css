@@ -1,0 +1,142 @@
+.inter-normel {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.noto-serif-normel {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+  background-color: #FAFBFF;
+  padding: 0;
+}
+
+/* Nav header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+
+nav{
+  display: flex;
+  gap: 80px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #8987A1;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+nav a:hover{
+  color: black;
+}
+
+.cart{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  gap: 10px;
+}
+.cart svg{
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width:768px){
+  nav a{
+    display: none;
+  }
+  header{
+    padding: 10px 5%;
+  }
+  .logo img{
+    width: 60%;
+    height: 60%;
+  }
+}
+
+/* Section-1 */
+
+
+.section-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  padding: 10% 10%;
+}
+
+.banner-text{
+  max-width: 570px;
+}
+
+.banner-text h1{
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 13px;
+}
+
+.banner-text h1 span{
+  color: #E95A08;
+}
+
+.banner-text p{
+  color: #000000;
+  opacity: 50%;
+  font-size: 22px ;
+  
+}
+.banner-img{
+  max-width: 100%;
+}
+
+.banner-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  
+  .section-1{
+    flex-direction: column-reverse;
+    align-items: right;
+    padding: 0 0;
+
+  }
+  .banner-text{
+    padding: 0 5%;
+  }
+  .banner-text h1{
+    font-size: 24px;
+    width: 60%;
+  }
+  .banner-text p{
+    font-size: 14px;
+  }
+  
+}
+
+/* section-2 */
+
+
+
+
+
+
+
