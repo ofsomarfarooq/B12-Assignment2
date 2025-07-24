@@ -223,6 +223,99 @@ nav a:hover{
   }
 }
 
+/* section-3 */
+
+.section-3{
+  padding: 10% 10%;
+
+}
+
+.lover-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.lover-img{
+  position: relative;
+  min-width: 540px;
+  flex: 1;
+}
+
+
+.badge{
+  position: absolute;
+  top: -130px;
+  left:380px;
+  width: 286px;
+  height: 286px;
+}
+
+.lover-text{
+  padding-left: 0;
+  flex: 1;
+  align-items: end;
+}
+
+.lover-text h2{
+  font-size: 50px;
+  width: 60%;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.lover-text ul{
+  list-style: disc;
+  padding-left: 40px;
+  color: #000000;
+  opacity: 50%;
+  font-size: 22px ;
+  width: 60%;
+  
+}
+
+.lover-text li{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .section-3{
+    padding: 5% 5%;
+  }
+  .lover-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lover-img, .lover-text{
+    width: 100%;
+    min-width: 358px;
+    
+  }
+  .not-badge{
+    width: 100%;
+  height: auto;
+  }
+  .badge{
+    display: none;
+  }
+  .lover-text h2{
+    font-size:24px;
+    width: 100%;
+  }
+  .lover-text ul{
+    font-size:14px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  
+  
+}
+
 
 
 
