@@ -227,6 +227,9 @@ nav a:hover{
   .plant-card button{
     font-size: 10px;
   }
+  .plant-name,.plant-price{
+    font-size: 16px;
+  }
 }
 
 /* section-3 */
@@ -373,7 +376,7 @@ nav a:hover{
 }
 .deal-card::after {
   content: "";
-  padding: -10% -30%;
+  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -432,6 +435,14 @@ nav a:hover{
 
 @media (max-width: 768px){
 
+  .section-4 h2{
+    padding-top: 50%;
+    font-size: 24px;
+  }
+  .section-4 p{
+    font-size: 14px;
+  }
+
   .deals-grid {
   grid-template-columns: repeat(1,1fr);
   }
@@ -443,18 +454,13 @@ nav a:hover{
     grid-column: span 1;
   }
   .large .deal-info h3{
+    
     font-size: 20px;
   }
   .large .deal-info a{
     font-size: 16px;
   }
-  .section-4 h2{
-    padding-top: 50%;
-    font-size: 24px;
-  }
-  .section-4 p{
-    font-size: 14px;
-  }
+  
 
 
 }
@@ -507,6 +513,9 @@ nav a:hover{
 }
  
 @media(max-width: 768px){
+  .section-5{
+    padding-top: 35%;
+  }
   .section-5 h1{
     font-size: 20px;
   }
@@ -519,18 +528,70 @@ nav a:hover{
 }
 
 
+/* Footer */
 
+footer{
+  padding: 5% 10% ;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
 
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  width: 25%;
+}
 
+.footer-logo img{
+  width: 135px;
+}
 
+.footer-logo p{
+  font-size: 22px;
+  color: #000000;
+  opacity: 50%;
+}
 
+.footer-links{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ 
+}
 
+.footer-links a{
+  text-decoration: none;
+  color: gray;
+  transition: 0.3s ease;
+}
+.footer-links a:hover{
+  color: #000000;
+}
 
+.footer-socials{
+  display: flex;
+  align-items: flex-start;
+  
+  gap:32px;
+  width: 25%;
+}
 
+.footer-socials a image{
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
 
-
-
-
-
-
-
+@media (max-width: 768px){
+  footer{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer-logo{
+    width: 100%;
+  }
+}
