@@ -14,6 +14,7 @@
     "wdth" 100;
 }
 
+
 body{
   background-color: #FAFBFF;
   padding: 0;
@@ -191,6 +192,7 @@ nav a:hover{
   font-weight: bold;
 }
 
+
 .plant-card button{
   margin-top: 10px;
   width: 100%;
@@ -261,6 +263,16 @@ nav a:hover{
   left:380px;
   width: 286px;
   height: 286px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .lover-text{
